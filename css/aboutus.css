@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #111111;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+nav {
+  position: absolute;
+  top: 0%;
+  position: sticky;
+  z-index: 9999;
+  background-color: transparent;
+}
+
+nav .container {
+  /* padding: 2vh 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+nav .container .navbar-nav {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+nav .container .navbar-nav .curr-page a {
+  text-decoration: none;
+  color: #ff9b26;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav .container .navbar-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav .container img {
+  width: 6rem;
+}
+
+#hamburger {
+  display: none;
+}
+
+.aboutus_toptext {
+  display: flex;
+  width: 100%;
+  height: 79vh;
+}
+
+.aboutus_toptext h2 {
+  font-weight: 600;
+  color: #ff9b26;
+  padding-top: 30%;
+  font-size: 64px;
+  text-align: left;
+}
+
+.aboutus_topimg img {
+  position: absolute;
+  top: 0%;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+
+.aboutus_information {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 7rem;
+}
+
+.aboutus_information_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  /* width: 50%;
+    height: 75%; */
+}
+
+.aboutus_information_img img {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+
+.aboutus_information_text {
+  width: 50%;
+}
+
+.aboutus_information_text p {
+  display: flex;
+  padding: 2rem;
+  color: white;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.certification {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff9b26;
+}
+
+.certification .certification_img img {
+  padding-left: 2rem;
+  width: 170%;
+  height: 170%;
+  display: flex;
+}
+
+.certification .certification_text {
+  justify-content: center;
+  padding-left: 10rem;
+}
+
+.certification .certification_text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  /* padding-left: 2rem; */
+}
+
+.certification .certification_text p {
+  font-size: 1rem;
+  font-weight: 300;
+  /* padding-left: 2rem; */
+}
+
+.achievements_text {
+  font-size: 3rem;
+  padding-top: 3rem;
+  padding-left: 5rem;
+  justify-content: left;
+}
+
+.achievements_text p {
+  color: #ff9b26;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.achievements_1 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievements_1_text {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.achievements_1_text h1{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.achievements_1 img {
+  justify-content: center;
+  display: flex;
+  width: 20%;
+  height: 20%;
+}
+
+.achievements_2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievements_2_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.achievements_2_text h1{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.achievements_2 img {
+  justify-content: center;
+  display: flex;
+  width: 20%;
+  height: 20%;
+}
+
+.achievements_3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievements_3_text {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  color: white;
+}
+
+.achievements_3_text h1{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.achievements_3 img {
+  justify-content: center;
+  display: flex;
+  width: 20%;
+  height: 20%;
+}
+
+footer {
+  padding-top: 3rem;
+}
+
+footer .container p {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  #hamburger {
+    display: flex;
+    align-items: center;
+    color: #ff9b26;
+  }
+
+  nav .container .navbar-nav {
+    display: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    top: 100%;
+    right: -100%;
+    width: 15rem;
+    background-color: #ff9b26;
+    height: 100vh;
+    padding: 5vh;
+  }
+
+  nav .container .navbar-nav.active {
+    display: flex;
+    right: 0%;
+  }
+
+  nav .container .navbar-nav a {
+    color: black;
+  }
+}

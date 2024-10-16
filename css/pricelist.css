@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #111111;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+nav {
+  position: absolute;
+  top: 0%;
+  position: sticky;
+  z-index: 9999;
+  background-color: transparent;
+}
+
+nav .container {
+  /* padding: 2vh 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+nav .container .navbar-nav {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+nav .container .navbar-nav .curr-page a {
+  text-decoration: none;
+  color: #ff9b26;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav .container .navbar-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav .container img {
+  width: 6rem;
+}
+
+#hamburger {
+  display: none;
+}
+
+.pricelist_top img {
+  position: absolute;
+  top: 0%;
+  z-index: -1;
+  width: 100%;
+  height: 75vh;
+}
+
+.pricelist_bannertop {
+  /* background-image: url(./../image/pricelist_top.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricelist_bannertop h3 {
+  padding-top: 15%;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.pricelist_bannertop p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.Our_Venue_Text {
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+  display: flex;
+}
+
+.Our_Venue_Text p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff9b26;
+}
+
+.banner img {
+  position: absolute;
+  top: 0%;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+
+/*Main*/
+
+.venues_mainhall {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.venues_mainhall .container {
+  background-image: url(./../image/pricelist_mainhall.png);
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 0 5%; */
+}
+
+.venues_mainhall .container p {
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.venues_mainhall_text .container p {
+  padding: 5vh 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.information_mainhall {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 12.5%;
+  padding-top: 2.5%;
+}
+
+.information_mainhall h2{
+  color:#ff9b26;
+  font-size: 2rem;
+}
+
+.information_mainhall h5{
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+/*Nakula*/
+
+.venues_nakulahall {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.venues_nakulahall .container {
+  background-image: url(./../image/pricelist_nakulahall.jpg);
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 0 5%; */
+}
+
+.venues_nakulahall .container p {
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.venues_nakulahall_text .container p {
+  padding: 5vh 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.information_nakulahall {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 12.5%;
+  padding-top: 2.5%;
+}
+
+.information_nakulahall h2{
+  color:#ff9b26;
+  font-size: 2rem;
+}
+
+.information_nakulahall h5{
+  color: white;
+  font-size: 1.5rem;
+}
+
+/*Sadewa*/
+
+.venues_sadewahall {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.venues_sadewahall .container {
+  background-image: url(./../image/pricelist_sadewahall.jpg);
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 0 5%; */
+}
+
+.venues_sadewahall .container p {
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.venues_sadewahall_text .container p {
+  padding: 5vh 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.information_sadewahall {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 12.5%;
+  padding-top: 2.5%;
+}
+
+.information_sadewahall h2{
+  color:#ff9b26;
+  font-size: 2rem;
+}
+
+.information_sadewahall h5{
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Vijaya */
+
+.venues_vijayaroom{
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.venues_vijayaroom .container {
+  background-image: url(./../image/pricelist_vijayaroom.jpg);
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 0 5%; */
+}
+
+.venues_vijayaroom .container p {
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.venues_vijayaroom_text .container p {
+  padding: 5vh 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.information_vijayaroom {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 7.5%;
+  padding-top: 2.5%;
+}
+
+.information_vijayaroom h2{
+  color:#ff9b26;
+  font-size: 2rem;
+}
+
+.information_vijayaroom h5{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.contactus_text {
+  justify-content: center;
+  align-items: center;
+}
+
+.contactus_text a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ff9b26;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+footer {
+  padding: 2vh 0;
+}
+
+footer .container p {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  #hamburger {
+    display: flex;
+    align-items: center;
+    color: #ff9b26;
+  }
+
+  nav .container .navbar-nav {
+    display: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    top: 100%;
+    right: -100%;
+    width: 15rem;
+    background-color: #ff9b26;
+    height: 100vh;
+    padding: 5vh;
+  }
+
+  nav .container .navbar-nav.active {
+    display: flex;
+    right: 0%;
+  }
+
+  nav .container .navbar-nav a {
+    color: black;
+  }
+}

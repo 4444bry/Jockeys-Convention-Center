@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #111111;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+nav {
+  position: absolute;
+  top: 0%;
+  position: sticky;
+  z-index: 9999;
+  background-color: transparent;
+}
+
+nav .container {
+  /* padding: 2vh 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+nav .container .navbar-nav {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+nav .container .navbar-nav .curr-page a{
+  text-decoration: none;
+  color: #FF9B26;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav .container .navbar-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav .container img {
+  width: 6rem;
+}
+
+#hamburger {
+  display: none;
+}
+
+.jcctext {
+  display: flex;
+  width: 100%;
+  height: 79vh;
+}
+
+.jcctext h2 {
+  font-weight: 00;
+  color: white;
+  font-size: 64px;
+  text-align: right;
+}
+
+.banner img {
+  position: absolute;
+  top: 0%;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+
+.pricelist_banner1 {
+  background-image: url(./../image/pricelist_top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Our_Venue_Text {
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+}
+
+
+.banner2 {
+  background-image: url(./../image/home-upcomingevents.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner2 h3 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.banner2 p {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.banner3 {
+  background-image: url(./../image/home-banner3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+.banner3 .container {
+  text-align: center;
+}
+
+.banner3 .container a {
+  color: #414141;
+  text-decoration: none;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.imagehome img {
+  display: block;
+  width: 100%;
+}
+
+.detail {
+  padding: 5vh 0;
+}
+
+.detail .container p {
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+}
+
+footer {
+  padding: 2vh 0;
+}
+
+footer .container p {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  #hamburger {
+    display: flex;
+    align-items: center;
+    color: #ff9b26;
+  }
+
+  nav .container .navbar-nav {
+    display: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    top: 100%;
+    right: -100%;
+    width: 15rem;
+    background-color: #ff9b26;
+    height: 100vh;
+    padding: 5vh;
+  }
+
+  nav .container .navbar-nav.active {
+    display: flex;
+    right: 0%;
+  }
+
+  nav .container .navbar-nav a {
+    color: black;
+  }
+}
